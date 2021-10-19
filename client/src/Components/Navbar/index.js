@@ -7,7 +7,7 @@ import {AiFillCaretDown} from "react-icons/ai";
 const NavSm = () => {
   return (
     <>
-    <div className="items-center justify-between flex w-full">
+    <div className="items-center justify-between flex w-full shadow-lg p-4">
       <div className="w-28">
         <img
           src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
@@ -29,7 +29,7 @@ const NavSm = () => {
 const NavMd = () => {
   return (
     <>
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full p-4 shadow-lg">
         <div class="w-12 h-12">
           <BiMenu className="w-full h-full"/>
         </div>
@@ -67,7 +67,7 @@ const NavLg = () => {
           <AiFillCaretDown className="w-full h-full"/>
         </div>
         </div>
-          <p className="text-gray-300 font-bold">|</p>
+          <p className="text-gray-400 font-bold">|</p>
           <div className="flex w-2/3 items-center bg-white gap-2">
           <div className="w-6 h-6 text-gray-700">
             <BiSearch className="w-full h-full"/>
@@ -85,7 +85,7 @@ const NavLg = () => {
 const Navbar = () => {
   return (
     <>
-      <nav className="p-4 bg-white items-center">
+      <nav className="bg-white items-center">
   <div className="md:hidden">
      {
      /*Mobile Screen*/
