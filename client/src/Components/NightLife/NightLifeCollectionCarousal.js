@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 const CollectionCard = (props) => {
   return (
     <>
-    <div className="w-full h-30 px-2">
+    <div className="w-full h-64 px-2">
     <img
       className="w-full h-full rounded-xl"
       src={props.src}
@@ -33,10 +33,10 @@ const NightLifeCollection = () => {
   }
 
   const CollectionImages = [
-    "https://b.zmtcdn.com/data/collections/7e296d5b75ca7b0f88e451b49e41ba99_1618208591.jpg",
-    "https://b.zmtcdn.com/data/collections/a160564c07aa3014066acd8fe4b4a0a5_1617950136.jpg",
-    "https://b.zmtcdn.com/data/collections/b22194cb38ed18a5200b387ad8f243f0_1582015782.jpg",
-    "https://b.zmtcdn.com/data/collections/332d70c0ff0894191d1661739ce18fbd_1605194226.jpg",
+    "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+    "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJpbmtzJTIwYXQlMjBiYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHJpbmtzJTIwYXQlMjBiYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1622720757991-6590da48aa50?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZHJpbmtzJTIwYXQlMjBiYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     "https://b.zmtcdn.com/data/collections/eb69f5f6e70ac43c8c0923fef39fabaf_1535615947.jpg",
     "https://b.zmtcdn.com/data/collections/1b8c164e8a18878468d8aabeb0b486b1_1625812715.jpg",
     "https://b.zmtcdn.com/data/collections/332d70c0ff0894191d1661739ce18fbd_1605194226.jpg",

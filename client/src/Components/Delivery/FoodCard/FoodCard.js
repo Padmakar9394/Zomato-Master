@@ -11,7 +11,7 @@ const FoodCard = () => {
         <div className="text-3xl text-gray-900">Delivary Reastraunts In Pune</div>
         <div className="flex flex-wrap mt-16">
           <div className=" w-full md:w-1/2 lg:w-1/3">
-            <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3">
+            <div className="flex flex-col cursor-pointer rounded-xl shadow-lg lg:hover:shadow-lg p-3 mr-4">
               <div className="container relative">
               <img
                 src="https://b.zmtcdn.com/data/pictures/7/19285347/18adcb8c171123dd8b5350d85425ca61_o2_featured_v2.jpg"
@@ -40,7 +40,7 @@ const FoodCard = () => {
          </div>
 
          <div className=" w-full md:w-1/2 lg:w-1/3">
-           <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3">
+           <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
              <div className="container relative">
              <img
                src="https://b.zmtcdn.com/data/pictures/chains/9/18335309/783b127c0c237353a7b987fcc1bcc63e_o2_featured_v2.jpg"
@@ -69,7 +69,7 @@ const FoodCard = () => {
         </div>
 
         <div className=" w-full md:w-1/2 lg:w-1/3">
-          <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3">
+          <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
             <div className="container relative">
             <img
               src="https://b.zmtcdn.com/data/pictures/chains/0/6505590/fe35b872037043566251f6a200a9ea1c_o2_featured_v2.jpg"
@@ -98,7 +98,7 @@ const FoodCard = () => {
        </div>
 
        <div className=" w-full md:w-1/2 lg:w-1/3">
-         <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3">
+         <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
            <div className="container relative">
            <img
              src="https://b.zmtcdn.com/data/pictures/chains/4/6503864/3030403348cd9adc57f737ee90ed1cf2_o2_featured_v2.jpg"
@@ -127,7 +127,7 @@ const FoodCard = () => {
       </div>
 
       <div className=" w-full md:w-1/2 lg:w-1/3">
-        <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3">
+        <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
           <div className="container relative">
           <img
             src="https://b.zmtcdn.com/data/pictures/9/19434279/bec21ac1e3d24a47681e304e90e73891_o2_featured_v2.jpg"
@@ -156,7 +156,7 @@ const FoodCard = () => {
      </div>
 
      <div className=" w-full md:w-1/2 lg:w-1/3">
-       <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3">
+       <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
          <div className="container relative">
          <img
            src="https://b.zmtcdn.com/data/pictures/chains/1/10571/c0ba9ec0f08684316b2552a8eb5a1ea8_o2_featured_v2.jpg"
