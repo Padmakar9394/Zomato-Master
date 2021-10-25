@@ -12,7 +12,7 @@ const CollectionCard = (props) => {
     <>
     <div className="w-full h-64 px-2">
     <img
-      className="w-full h-full rounded-xl"
+      className="w-full h-full object-cover rounded-xl"
       src={props.src}
       alt="Collection Image"
      />

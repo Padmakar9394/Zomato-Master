@@ -2,13 +2,14 @@ import React from "react";
 import { FaPizzaSlice } from "react-icons/fa";
 import { BiMenu, BiSearch } from "react-icons/bi";
 import {MdLocationOn, MdOutlineDeliveryDining, MdOutlineDining, MdOutlineNightlife} from "react-icons/md";
-import {AiFillCaretDown} from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineArrowLeft} from "react-icons/ai";
 
 
 const NavSm = () => {
   return (
     <>
     <div className="items-center justify-between flex w-full shadow-lg p-4">
+      <AiOutlineArrowLeft />
       <div className="w-28">
         <img
           src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
@@ -50,7 +51,7 @@ const NavMd = () => {
 const NavLg = () => {
   return (
     <>
-      <div className="container flex ml-28 gap-8 items-center w-3/5 mt-4">
+      <div className="container flex ml-28 gap-8 items-center mt-4 w-3/5">
       <div className="w-28 h-6">
       <img
         src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
