@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPizzaSlice } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
 import { BiMenu, BiSearch } from "react-icons/bi";
 import {MdLocationOn, MdOutlineDeliveryDining, MdOutlineDining, MdOutlineNightlife} from "react-icons/md";
 import { AiFillCaretDown, AiOutlineArrowLeft} from "react-icons/ai";
@@ -19,8 +19,8 @@ const NavSm = () => {
     </div>
     <div className="flex items-center gap-3">
       <button className="bg-zomato-400 text-white py-2 px-3 rounded-md">Use App</button>
-      <span className="border p-2 border-blue-300 text-blue-400 rounded-full">
-      <FaPizzaSlice />
+      <span className="border p-2 border-zomato-300 text-zomato-400 rounded-full">
+      <FaUserAlt />
       </span>
       </div>
       </div>
