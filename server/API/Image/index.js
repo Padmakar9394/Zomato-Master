@@ -20,7 +20,7 @@ Route             /
 Descrip           Uploading given image to S3 bucket , and then saving them
 Params            _id
 Access            Public
-Method            GET
+Method            POST
 */
 
 Router.post("/", upload.single("file"), async(req,res) => {

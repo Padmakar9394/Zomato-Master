@@ -12,9 +12,11 @@ import TabContainer from "../Components/restaurant/Tabs";
 
 //Components
 import RestaurantNavbar from "../Components/Navbar/restaurant.navbar";
+import CartContainer from "../Components/Cart/CartContainer";
 
 const RestaurantLayout = (props) => {
   return (
+    <>
     <div className="container lg:ml-16 items-start">
     <RestaurantNavbar />
     <div className="container w-full px-4 mt-4 lg:mt-8 lg:px-20 lg:w-5/6">
@@ -51,6 +53,8 @@ const RestaurantLayout = (props) => {
         <div className="relative">{props.children}</div>
     </div>
     </div>
+    <CartContainer />
+    </>
   )
 };
 

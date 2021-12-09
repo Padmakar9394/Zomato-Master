@@ -34,7 +34,7 @@ Router.get("/:_id", async(req,res) => {
 
 /*
 Route             /r
-Descrip           Get all the foods based on particular Restaurants
+Descrip           Get all the foods based on category
 Params            category
 Access            Public
 Method            GET
