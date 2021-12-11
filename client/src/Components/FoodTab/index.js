@@ -85,7 +85,7 @@ const {type} = useParams();
 
     return (
         <>
-          <div className="bg-white py-3 z-10 w-1/2 flex items-center justify-between md:justify-evenly text-gray-500 ml-12">
+          <div className="bg-white py-3 z-10 w-1/2 flex items-center justify-between md:justify-evenly text-gray-500">
             {allTypes.map((items) => (
               <Link to={`/${items.id}`}>
                 <div

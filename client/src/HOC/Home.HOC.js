@@ -11,7 +11,7 @@ const HomeLayoutHOC = ({component: Component, ...rest}) => {
         {...rest}
         component={(props) => (
           <HomeLayout>
-          <Component {...rest} />
+          <Component {...props} />
           </HomeLayout>
         )}
       />

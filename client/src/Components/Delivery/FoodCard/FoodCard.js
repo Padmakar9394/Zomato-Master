@@ -6,12 +6,12 @@ import Poster from "../../Carousal/poster";
 const FoodCard = () => {
   return (
     <>
-    <div className="container mx-auto w-full">
-      <div className="flex flex-col lg:ml-32 lg:mr-32 mt-4">
+    <div className="container mx-auto px-4 lg:px-20 w-full">
+      <div className="flex flex-col mt-8">
         <div className="text-3xl text-gray-900">Delivary Reastraunts In Pune</div>
-        <div className="flex flex-wrap mt-16">
+        <div className="flex flex-wrap mt-8">
           <div className=" w-full md:w-1/2 lg:w-1/3">
-            <div className="flex flex-col cursor-pointer rounded-xl shadow-lg lg:hover:shadow-lg p-3 mr-4">
+            <div className="flex flex-col cursor-pointer rounded-xl shadow-lg lg:hover-shadow-lg p-3 mr-4">
               <div className="container relative">
               <img
                 src="https://b.zmtcdn.com/data/pictures/7/19285347/18adcb8c171123dd8b5350d85425ca61_o2_featured_v2.jpg"

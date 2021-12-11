@@ -6,13 +6,13 @@ import FoodTab from "../Components/FoodTab";
 
 const HomeLayout = (props) => {
   return( <>
-    <div className="container mx-auto px-4 lg:px-20">
     <Navbar />
-    <div className="mt-8">
-    <FoodTab />
+    <div className="container mx-auto px-4 lg:px-20">
+      <div className="mt-8">
+        <FoodTab />
+      </div>
+    {props.children}
     </div>
-    </div>
-    <div className="container mx-auto px-4 lg:px-20">{props.children}</div>
   </>
 )
 };
