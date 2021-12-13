@@ -1,8 +1,8 @@
 import React from "react";
 
 import Slider from "react-slick";
-import {PrevArrow, NextArrow} from "./Arrow";
-import Poster from "./poster";
+import {PrevArrow, NextArrow} from "../Carousal/Arrow";
+import Poster from "../Carousal/poster";
 
 // Import css files
 import "slick-carousel/slick/slick.css";

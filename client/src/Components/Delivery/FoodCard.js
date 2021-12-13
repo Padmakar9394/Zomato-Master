@@ -1,17 +1,17 @@
 import React from "react";
 import {AiFillStar} from "react-icons/ai";
 
-import Poster from "../../Carousal/poster";
+import Poster from "../Carousal/poster";
 
 const FoodCard = () => {
   return (
     <>
-    <div className="container mx-auto px-4 lg:px-20 w-full">
+    <div className="container mx-auto lg:px-20 w-full">
       <div className="flex flex-col mt-8">
         <div className="text-3xl text-gray-900">Delivary Reastraunts In Pune</div>
         <div className="flex flex-wrap mt-8">
           <div className=" w-full md:w-1/2 lg:w-1/3">
-            <div className="flex flex-col cursor-pointer rounded-xl shadow-lg lg:hover-shadow-lg p-3 mr-4">
+            <div className="flex flex-col cursor-pointer rounded-xl shadow md:hover:shadow-lg p-3 mr-4">
               <div className="container relative">
               <img
                 src="https://b.zmtcdn.com/data/pictures/7/19285347/18adcb8c171123dd8b5350d85425ca61_o2_featured_v2.jpg"
@@ -27,7 +27,7 @@ const FoodCard = () => {
             </div>
             <div className="flex justify-between">
               <h2 className="text-gray-900 font-bold">Kake Da Hotel</h2>
-              <div className="bg-green-500 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
+              <div className="bg-green-600 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
                 <p>3.9</p>
                 <AiFillStar />
               </div>
@@ -40,7 +40,7 @@ const FoodCard = () => {
          </div>
 
          <div className=" w-full md:w-1/2 lg:w-1/3">
-           <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
+           <div className="flex flex-col cursor-pointer shadow md:hover:shadow-lg rounded-xl p-3 mr-4">
              <div className="container relative">
              <img
                src="https://b.zmtcdn.com/data/pictures/chains/9/18335309/783b127c0c237353a7b987fcc1bcc63e_o2_featured_v2.jpg"
@@ -56,7 +56,7 @@ const FoodCard = () => {
            </div>
            <div className="flex justify-between">
              <h2 className="text-gray-900 font-bold">Ovenstory Pizza</h2>
-             <div className="bg-green-500 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
+             <div className="bg-green-600 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
                <p>4.4</p>
                <AiFillStar />
              </div>
@@ -69,7 +69,7 @@ const FoodCard = () => {
         </div>
 
         <div className=" w-full md:w-1/2 lg:w-1/3">
-          <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
+          <div className="flex flex-col cursor-pointer shadow md:hover:shadow-lg rounded-xl p-3 mr-4">
             <div className="container relative">
             <img
               src="https://b.zmtcdn.com/data/pictures/chains/0/6505590/fe35b872037043566251f6a200a9ea1c_o2_featured_v2.jpg"
@@ -85,7 +85,7 @@ const FoodCard = () => {
           </div>
           <div className="flex justify-between">
             <h2 className="text-gray-900 font-bold">Hotel Al Zaika</h2>
-            <div className="bg-green-500 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
+            <div className="bg-green-600 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
               <p>3.6</p>
               <AiFillStar />
             </div>
@@ -98,7 +98,7 @@ const FoodCard = () => {
        </div>
 
        <div className=" w-full md:w-1/2 lg:w-1/3">
-         <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
+         <div className="flex flex-col cursor-pointer shadow md:hover:shadow-lg rounded-xl p-3 mr-4">
            <div className="container relative">
            <img
              src="https://b.zmtcdn.com/data/pictures/chains/4/6503864/3030403348cd9adc57f737ee90ed1cf2_o2_featured_v2.jpg"
@@ -114,7 +114,7 @@ const FoodCard = () => {
          </div>
          <div className="flex justify-between">
            <h2 className="text-gray-900 font-bold">PK Biryani House</h2>
-           <div className="bg-green-500 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
+           <div className="bg-green-600 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
              <p>4.2</p>
              <AiFillStar />
            </div>
@@ -127,7 +127,7 @@ const FoodCard = () => {
       </div>
 
       <div className=" w-full md:w-1/2 lg:w-1/3">
-        <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
+        <div className="flex flex-col cursor-pointer shadow md:hover:shadow-lg rounded-xl p-3 mr-4">
           <div className="container relative">
           <img
             src="https://b.zmtcdn.com/data/pictures/9/19434279/bec21ac1e3d24a47681e304e90e73891_o2_featured_v2.jpg"
@@ -143,7 +143,7 @@ const FoodCard = () => {
         </div>
         <div className="flex justify-between">
           <h2 className="text-gray-900 font-bold">BOX.72</h2>
-          <div className="bg-green-500 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
+          <div className="bg-green-600 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
             <p>3.6</p>
             <AiFillStar />
           </div>
@@ -156,7 +156,7 @@ const FoodCard = () => {
      </div>
 
      <div className=" w-full md:w-1/2 lg:w-1/3">
-       <div className="flex flex-col cursor-pointer shadow-lg lg:hover:shadow-lg rounded-xl p-3 mr-4">
+       <div className="flex flex-col cursor-pointer shadow md:hover:shadow-lg rounded-xl p-3 mr-4">
          <div className="container relative">
          <img
            src="https://b.zmtcdn.com/data/pictures/chains/1/10571/c0ba9ec0f08684316b2552a8eb5a1ea8_o2_featured_v2.jpg"
@@ -172,7 +172,7 @@ const FoodCard = () => {
        </div>
        <div className="flex justify-between">
          <h2 className="text-gray-900 font-bold">McDonald's</h2>
-         <div className="bg-green-500 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
+         <div className="bg-green-600 flex items-center px-1 text-sm mt-1 rounded-md text-gray-50">
            <p>4.2</p>
            <AiFillStar />
          </div>

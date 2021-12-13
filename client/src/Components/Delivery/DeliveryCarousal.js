@@ -2,7 +2,7 @@ import React from "react";
 
 //component
 import DeliveryFoodCategory from "./DeliveryFoodCategory";
-import FirstOrderCarousal from "../Carousal/FirstOrderCarousal";
+import FirstOrderCarousal from "./FirstOrderCarousal";
 
 
 const DeliverySm = () => {

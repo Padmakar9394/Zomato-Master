@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { BiMenu, BiSearch } from "react-icons/bi";
 import {MdLocationOn, MdOutlineDeliveryDining, MdOutlineDining, MdOutlineNightlife} from "react-icons/md";
 import {AiFillCaretDown} from "react-icons/ai";
 
+//component
+import SignIn from "../Auth/SignIn";
+import SignUp from "../Auth/SignUp";
 
-const NavSm = () => {
+
+const NavSm = ({ SignIn,SignUp }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (
     <>
     <div className="flex items-center justify-between w-full shadow-lg py-4 px-2">
@@ -15,12 +20,19 @@ const NavSm = () => {
           alt="logo"
           className="w-full h-full"
         />
-    </div>
-    <div className="flex items-center gap-3">
+      </div>
+      <div className="flex items-center gap-3 relative">
       <button className="bg-zomato-400 text-white py-2 px-3 rounded-full">Use App</button>
-      <span className="border p-2 border-gray-300 text-zomato-400 rounded-full">
-        <FaUserAlt />
-      </span>
+        <span onClick={() => setIsDropdownOpen((prev) => !prev)} className="border p-2 border-gray-300 text-zomato-400 rounded-full">
+          <FaUserAlt />
+        </span>
+        {
+          isDropdownOpen &&
+          <div className="absolute shadow-lg py-3 -bottom-20 bg-white right-4 z-10 flex flex-col gap-2 w-full">
+            <button onClick={SignIn}>Sign In</button>
+            <button onClick={SignUp}>Sign Up</button>
+          </div>
+        }
       </div>
       </div>
   </>
@@ -47,7 +59,7 @@ const NavMd = () => {
 };
 
 
-const NavLg = () => {
+const NavLg = ({SignIn,SignUp}) => {
   return (
     <>
     <div className="container mx-auto px-4 lg:px-20">
@@ -75,8 +87,8 @@ const NavLg = () => {
           </div>
       </div>
       <div className="flex gap-2">
-        <button className="text-gray-500 text-xl hover:text-gray-800">Login</button>
-        <button className="text-gray-500 text-xl hover:text-gray-800">Signup</button>
+        <button onClick={SignIn} className="text-gray-500 text-xl hover:text-gray-800">Login</button>
+        <button onClick={SignUp} className="text-gray-500 text-xl hover:text-gray-800">Signup</button>
       </div>
     </div>
     </div>
@@ -87,25 +99,32 @@ const NavLg = () => {
 
 
 const Navbar = () => {
+  const [openSignin, setOpenSignin] = useState(false);
+  const [openSignup, setOpenSignup] = useState(false);
+
+  const openSignInModal = () => setOpenSignin(true);
+  const openSignUpModal = () => setOpenSignup(true);
   return (
     <>
+    <SignIn isOpen={openSignin} setIsOpen={setOpenSignin} />
+    <SignUp isOpen={openSignup} setIsOpen={setOpenSignup} />
       <nav className="bg-white items-center">
         <div className="md:hidden">
           {
             /*Mobile Screen*/
-            <NavSm />
+            <NavSm SignIn={openSignInModal} SignUp={openSignUpModal} />
           }
         </div>
         <div className="hidden lg:hidden md:flex">
           {
             //Tablet Screen
-            <NavMd />
+            <NavMd SignIn={openSignInModal} SignUp={openSignUpModal} />
           }
         </div>
         <div className="hidden lg:flex">
           {
             //Large Screen
-            <NavLg />
+            <NavLg SignIn={openSignInModal} SignUp={openSignUpModal} />
           }
         </div>
       </nav>

@@ -10,9 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 const CollectionCard = (props) => {
   return (
     <>
-    <div className="w-full h-30 px-2">
+    <div className="w-full h-64 px-2">
     <img
-      className="w-full h-full rounded-xl"
+      className="w-full h-full object-cover rounded-xl"
       src={props.src}
       alt="Collection Image"
      />

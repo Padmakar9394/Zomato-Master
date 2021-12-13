@@ -6,7 +6,8 @@ import {AiFillCaretRight} from "react-icons/ai";
 const NightLifeLg = () => {
   return (
     <>
-      <div className="ml-32 mr-32 flex flex-col">
+    <div className="container mx-auto px-4 lg:px-20">
+      <div className="flex flex-col">
         <h1 className="text-gray-800 text-3xl -mt-8 text-bold">Collections</h1>
         <div className="flex justify-between mt-4">
           <h3 className="text-gray-600 text-xl">Explore curated lists of top restaurants, cafes, pubs, and bars in Pune, based on trends</h3>
@@ -18,6 +19,7 @@ const NightLifeLg = () => {
         <div className="mt-2">
           <NightLifeCollection />
         </div>
+      </div>
       </div>
     </>
   )

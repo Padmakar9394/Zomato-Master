@@ -3,13 +3,12 @@ import React from "react";
 const Poster = (props) => {
   return (
     <>
-    <div className="flex flex-col items-start gap-1 px-3 mt-3">
-      <div className="h-50" >
+    <div className="flex flex-col gap-2 mt-3">
+      <div className="w-full px-2 h-64" >
        <img src={props.src}
-       alt={props.title} className="rounded-xl"/>
+       alt={props.title} className="w-full h-full object-cover rounded-xl"/>
       </div>
-      <h3
-      className="text-xl text-bold text-gray-900 items-center px-1"
+      <h3 className="text-xl text-bold text-gray-900 text-center px-1"
       >{props.title}</h3>
       <p
       className="text-sm flex justify-between">{props.subtitle}</p>

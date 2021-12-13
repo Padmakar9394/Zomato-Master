@@ -2,7 +2,7 @@ import React from "react";
 
 //components
 import DeliveryCarousal from "./DeliveryCarousal";
-import FoodCard from "./FoodCard/FoodCard";
+import FoodCard from "./FoodCard";
 
 const Delivery = () => {
   return (

@@ -70,6 +70,7 @@ const CartContainer = () => {
           <FoodItem name="Pizza" quantity="3" price="80" />
         </div>
       </div>
+
     }
       <div className="fixed w-full bg-white z-10 py-3 bottom-0 px-3">
           <CartSm toggle={toggleCart} />
