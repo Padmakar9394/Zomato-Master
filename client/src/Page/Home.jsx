@@ -1,13 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 //component
 import Delivery from "../Components/Delivery";
 import DiningOut from "../Components/DiningOut";
 import NightLife from "../Components/NightLife";
 
+//redux actions
+import { getRestaurant } from "../Redux/Reducer/restaurant/restaurant.action";
+
 const Pages = () => {
   const { type } = useParams();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getRestaurant());
+  }, []);
 
   return(
     <>
