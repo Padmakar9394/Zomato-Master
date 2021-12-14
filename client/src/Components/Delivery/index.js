@@ -7,7 +7,7 @@ import FoodCard from "./FoodCard";
 const Delivery = () => {
   return (
     <>
-    <div className="mt-16">
+    <div className="container mx-auto px-4 lg:px-20 mt-16">
       <DeliveryCarousal />
       <FoodCard />
     </div>

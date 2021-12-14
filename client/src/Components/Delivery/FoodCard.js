@@ -6,7 +6,6 @@ import Poster from "../Carousal/poster";
 const FoodCard = () => {
   return (
     <>
-    <div className="container mx-auto lg:px-20 w-full">
       <div className="flex flex-col mt-8">
         <div className="text-3xl text-gray-900">Delivary Reastraunts In Pune</div>
         <div className="flex flex-wrap mt-8">
@@ -186,7 +185,6 @@ const FoodCard = () => {
 
         </div>
       </div>
-    </div>
     </>
   )
 };
