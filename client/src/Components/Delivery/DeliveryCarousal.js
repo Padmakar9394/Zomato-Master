@@ -8,39 +8,36 @@ import { NextArrow, PrevArrow } from "../Carousal/Arrow";
 const DeliveryCarousal = () => {
   const categories = [
     {
-      image:
-        "https://b.zmtcdn.com/data/homepage_dish_data/4/76d788a2600b609bb0a08443e03df95b.png",
-      title: "biryani",
+      image: "https://b.zmtcdn.com/data/o2_assets/7e83ad932f340bacd71bd7e891ede6541632716696.png",
+      title: "Biryani"
     },
     {
-      image:
-        "https://b.zmtcdn.com/data/dish_photos/cf9/08bf86a8c902df8e6d703e374391ecf9.jpg",
-      title: "Kesari Bath",
+      image: "https://b.zmtcdn.com/data/o2_assets/ed782b0b295520da4d4d92c01fb779811632716695.png",
+      title: "Basundi"
     },
     {
-      image:
-        "https://b.zmtcdn.com/data/homepage_dish_data/4/742929dcb631403d7c1c1efad2ca2700.png",
-      title: "Chicken",
+      image: "https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png",
+      title: "Pizza"
     },
     {
-      image:
-        "https://b.zmtcdn.com/data/dish_images/aebeb88b78a4a83ea9e727f234899bed1602781186.png",
-      title: "Chaat",
+      image: "https://b.zmtcdn.com/data/o2_assets/3d902eb4bb267efea010ade87bcb1f3f1632716698.png",
+      title: "Chaat"
     },
     {
-      image:
-        "https://b.zmtcdn.com/data/dish_images/770ba11e5159e6740d68f71f1b838a261612463246.png",
-      title: "Cake",
+      image: "https://b.zmtcdn.com/data/o2_assets/dff007e05e2f72a4abc0772c7a8cd0951632716697.png",
+      title: "Burger"
     },
     {
-      image:
-        "https://b.zmtcdn.com/data/homepage_dish_data/4/eb2ef145c0fcad44dbb4ed26aad1527d.png",
-      title: "Rolls",
+      image: "https://b.zmtcdn.com/data/o2_assets/adbe5236974520ecba7cb9f47e4c92011632716658.png",
+      title: "Chicken"
     },
     {
-      image:
-        "https://b.zmtcdn.com/data/dish_photos/06a/af146087e76aed8c0baa90a84a6f206a.jpg",
-      title: "Sagu",
+      image: "https://b.zmtcdn.com/data/o2_assets/b78083afb63995c7e0a676d01dcc164d1632716549.png",
+      title: "Thali"
+    },
+    {
+      image: "https://b.zmtcdn.com/data/o2_assets/7f5ceb9a6ae7e662ba2fec0e994fc0ad1632716550.png",
+      title: "Veg Kolhapuri"
     },
   ];
   const settings = {
