@@ -9,12 +9,12 @@ import { NextArrow, PrevArrow } from "../../Components/Carousal/Arrow";
 import MenuCollection from "../../Components/restaurant/MenuCollection";
 import MenuSimilarRestaurantCard from "../../Components/restaurant/MenuSimilarRestaurantCard";
 import ReviewCard from "../../Components/restaurant/Reviews/reviewCard";
+import Mapview from "../../Components/restaurant/Mapview";
 
 const Overview = () => {
 
   const { id } = useParams();
   const settings = {
-    dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
@@ -29,7 +29,6 @@ const Overview = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -126,6 +125,14 @@ const Overview = () => {
               activeColor="#ffd700"
               />
           </div>
+          <div className="my-4 w-full  md:hidden flex flex-col gap-4">
+          <Mapview
+            title="Ovenstory Pizza"
+            phno="+917738383000"
+            address="217, Omkareshwar Path, Hasabnis Bakhal, Shaniwar Peth, Pune"
+            mapLocation={[18.522626317935007, 73.85342587617096]}
+          />
+          </div>
           <div className="flex flex-col my-4">
             <ReviewCard />
             <ReviewCard />
@@ -134,8 +141,15 @@ const Overview = () => {
         </div>
         <aside
           style={{ height: "fit-content" }}
-          className="hidden md:block sticky md:w-4/12 bg-white p-3 shadow-xl top-2"
-          ></aside>
+          className="hidden md:flex sticky md:w-4/12 rounded-xl bg-white p-3 shadow-md top-2 flex flex-col gap-4"
+          >
+          <Mapview
+            title="Ovenstory Pizza"
+            phno="+917738383000"
+            address="217, Omkareshwar Path, Hasabnis Bakhal, Shaniwar Peth, Pune"
+            mapLocation={[18.522626317935007, 73.85342587617096]}
+          />
+          </aside>
       </div>
     </>
   )

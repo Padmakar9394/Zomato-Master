@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { BiMenu, BiSearch } from "react-icons/bi";
-import {MdLocationOn, MdOutlineDeliveryDining, MdOutlineDining, MdOutlineNightlife} from "react-icons/md";
+import {MdLocationOn} from "react-icons/md";
 import {AiFillCaretDown} from "react-icons/ai";
 
 //component
@@ -28,9 +28,9 @@ const NavSm = ({ SignIn,SignUp }) => {
         </span>
         {
           isDropdownOpen &&
-          <div className="absolute shadow-lg py-3 -bottom-20 bg-white right-4 z-10 flex flex-col gap-2 w-full">
-            <button onClick={SignIn}>Sign In</button>
-            <button onClick={SignUp}>Sign Up</button>
+          <div className="absolute shadow-lg py-3 px-4 -bottom-20 bg-white right-4 z-10 flex flex-col gap-2">
+            <button onClick={SignIn} className="text-white px-2 py-1 rounded font-medium bg-zomato-400">Sign In</button>
+            <button onClick={SignUp} className="text-white px-2 py-1 rounded font-medium bg-zomato-400">Sign Up</button>
           </div>
         }
       </div>
@@ -39,13 +39,21 @@ const NavSm = ({ SignIn,SignUp }) => {
 )
 };
 
-const NavMd = () => {
+const NavMd = ({ SignIn,SignUp }) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   return (
     <>
-      <div className="flex items-center justify-between w-full p-4 shadow-lg">
-        <div class="w-12 h-12">
+      <div className="flex items-center relative justify-between w-full p-4 shadow-lg">
+        <span onClick={() => setIsDropdownOpen((prev) => !prev)} className="w-12 h-12">
           <BiMenu className="w-full h-full"/>
-        </div>
+        </span>
+        {
+          isDropdownOpen &&
+          <div className="absolute shadow-lg py-3 px-4 rounded-md -bottom-20 items-start bg-white z-10 flex flex-col gap-2">
+            <button onClick={SignIn} className="text-white px-2 py-1 rounded font-medium bg-zomato-400">Sign In</button>
+            <button onClick={SignUp} className="text-white px-2 py-1 rounded font-medium bg-zomato-400">Sign Up</button>
+          </div>
+        }
         <div className="w-40">
         <img
           src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"

@@ -12,7 +12,7 @@ import Overview from "./Page/Restaurant/Overview";
 import OrderOnline from "./Page/Restaurant/OrderOnline";
 import Reviews from "./Page/Restaurant/Reviews";
 import Menu from "./Page/Restaurant/Menu";
-import Photos from "./Page/Restaurant/Photo";
+import Photos from "./Page/Restaurant/Photos";
 import Checkout from "./Page/Checkout";
 
 
