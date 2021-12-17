@@ -32,13 +32,13 @@ const RestaurantCards = (props) => {
         <div className="my-2 flex flex-col gap-2">
           <div className="flex items-center justify-between">
             <h4 className="text-xl font-medium">{props.name}</h4>
-            <span className="bg-green-800 text-white text-sm p-1 rounded flex items-center">
+            <span className="bg-green-600 text-white text-sm p-1 rounded flex items-center">
               {props.restaurantReviewValue} <AiTwotoneStar />
             </span>
           </div>
-          <div className="flex items-center justify-between text-gray-500">
-            <p>{props.cuisine.join(", ")}</p>
-            <p>₹ {props.averageCost} for one</p>
+          <div className="flex items-center justify-between">
+            <p className="text-gray-500">{props.cuisine.join(", ")}</p>
+            <p className="text-gray-700 font-semibold">₹ {props.averageCost} for one</p>
           </div>
         </div>
       </div>
